@@ -1,0 +1,173 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff; }
+body hr {
+    margin: 20px;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0; }
+body h4 {
+    text-transform: uppercase;
+    color: gray;
+    display: block;
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 0; }
+.content {
+    padding: 0 20px;
+}
+.header-wrapper {
+    display: flex;
+    width: 100%;
+    border-bottom: 5px solid #cecece
+}
+header {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    z-index: 5;
+    display: flex; }
+header input {
+    flex: 1 0 50px;
+    /* height: 50px; */
+    width: 100%;
+    background-color: #efefef;
+    border: 0;
+    outline: none;
+    padding-left: 25px;
+    padding-right: 20px;
+    margin-bottom: 0;
+    color: #666; }
+header input[type="text"]::-webkit-input-placeholder,
+header input::-webkit-input-placeholder {
+    color: #666; }
+header input[type="text"]:-ms-input-placeholder,
+header input:-ms-input-placeholder {
+    color: #666; }
+header input[type="text"]::-ms-input-placeholder,
+header input::-ms-input-placeholder {
+    color: #666; }
+header input[type="text"]::placeholder,
+header input::placeholder {
+    color: #666; }
+header input[type="text"]:focus,
+header input:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    border: 0;
+    background: #efefef; }
+header button#add {
+    width: 50px;
+    flex: 0 1 50px;
+    height: 50px;
+    /* position: absolute; */
+    /* top: 15px; */
+    /* right: 15px; */
+    border: 0;
+    z-index: 2;
+    background: #fff;
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+    outline: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+header button#add span {
+    margin-top: -.1em; }
+header button#add:hover {
+    background-color:#ccc; }
+header button#add:active {
+    background-color:#ccc; }
+
+ul.todo {
+}
+ul.todo#todo::after, ul.todo#completed::after {
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: #bbb;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+ul.todo#todo {
+    background-color: #efefef;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+ul.todo#todo:empty:after {
+    content: "Dream Big!"; }
+ul.todo#completed {
+    background-color: #efefef;
+    padding: 0 10px;
+    border-radius: 5px; }
+ul.todo#completed:empty:after {
+    content: "Stop Slacking off!"; }
+ul.todo#completed li button.complete {
+    border: 2px solid #ddd; }
+ul.todo#completed li .buttons button.complete:hover {
+    border: 2px solid teal; }
+ul.todo li {
+    border-bottom: 1px solid #eee;
+    list-style-type: none;
+    height: 50px;
+    /* padding: 5px 0 5px; */
+    /* text-indent: 0; */
+    /* margin-left: 0; */
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+ul.todo li:last-of-type {
+    border-bottom: 0; }
+ul.todo li .buttons {
+    width: 80px;
+    position: absolute;
+    height: 50px;
+    top: 0;
+    right: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+ul.todo li .buttons button {
+    content: "+";
+    width: 2em;
+    height: 2em;
+    border-radius: 1em;
+    float: left; }
+ul.todo li .buttons button.remove {
+    border: 2px solid #ddd;
+    content: "x" }
+ul.todo li .buttons button.remove:hover {
+    border: 2px solid red; }
+ul.todo li .buttons button.complete {
+    border: 2px solid #ddd; }
+ul.todo li .buttons button.complete:hover {
+    border: 2px solid teal; }
